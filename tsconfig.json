@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/", // папка куда будет компилироваться ts
+    "noImplicitAny": true, // не позволяет использовать any тип данных( чтобы указыватьв обязательном порядке тип данных)
+    "module": "esnext", // вариант модулей es6 или commonjs
+    "target": "es5", // в какую версию js компилировать
+    "jsx": "react-jsx", // чтобы работал jsx и могли использовать react чтобы не импортировать в каждый файл React
+    "allowJs": true,
+    "moduleResolution": "node", // вариант импортов node или classic
+    "esModuleInterop": true, // флаг для того чтобы в пакетах где используется require можно было использовать import
+    "allowSyntheticDefaultImports": true, // чтобы не писать export default в пакетах где используется require
+    "baseUrl": ".", // папка где лежат все файлы
+    "paths": {
+      "*": ["./src/*"] // настройка чтобы там где мы импортируем был указан путь относительно папки src (абсолутный путь)
+    }
+
+  },
+  "ts-node": { // чтобы в node js работал импорт es6 модулей указываем данную настройку
+    "compilerOptions": { // указываем всю эьу настройку
+      "module": "CommonJS"
+    }
+  }
+}

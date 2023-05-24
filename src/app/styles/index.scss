@@ -1,0 +1,87 @@
+@import "variables/global";
+@import "reset";
+@import "themes/normal";
+@import "themes/dark";
+
+.app{
+    font-size: var(--font-m); // это обьединенная переемнная от global.scss
+    background: var(--bg-color); // здесь мы установили названия переменных которые будут меняться в зависимости от темы
+    color: var(--font-color); // цвет текста
+    min-height: 100vh; // 100vh - это 100% высоты экрана
+}
+
+.content-page{
+    display: flex;
+    padding-top: calc(var(--navbar-height) - 10px) ;
+}
+
+.page-wrapper{
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.app .ql-editor {
+    height: calc(100% - 10px);
+}
+
+.app .ql-container {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #fefcfc;
+    height: calc(100% - 120px) ;
+}
+
+/* Snow Theme */
+.app .ql-snow.ql-toolbar {
+    display: block;
+    padding: 10px 0 0;
+
+    //background: #eaecec;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+
+.app .ql-picker.ql-font .ql-picker-label[data-value="mirza"]::before,
+.app .ql-picker.ql-font .ql-picker-item[data-value="mirza"]::before
+{
+    font-family: Mirza, cursive;
+    content: "Mirza";
+}
+
+.app .ql-picker.ql-font .ql-picker-label[data-value="roboto"]::before,
+.app .ql-picker.ql-font .ql-picker-item[data-value="roboto"]::before
+{
+    font-family: Roboto;
+    content: "Roboto";
+}
+
+.app .ql-picker.ql-font .ql-picker-label[data-value="times-new-roman"]::before,
+.app .ql-picker.ql-font .ql-picker-item[data-value="times-new-roman"]::before
+{
+    font-family: 'Times New Roman';
+    content: "Times New Roman";
+}
+
+
+
+
+.app .ql-font-roboto {
+    font-family: Roboto;
+}
+
+.app .ql-font-mirza {
+    font-family: Mirza;
+}
+
+
+.app .ql-font-times-new-roman {
+    font-family: 'Times New Roman';
+}
+
+
+
+
+
+

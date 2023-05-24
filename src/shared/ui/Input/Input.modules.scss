@@ -1,0 +1,16 @@
+
+.outline{
+    min-width: 50px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px ;
+    position: relative;
+
+    &:focus-within{
+        border-color: #666;
+
+        .clear{
+            color: #666;
+        }
+    }
+}

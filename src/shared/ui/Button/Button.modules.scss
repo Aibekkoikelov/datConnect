@@ -1,0 +1,36 @@
+.Button{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.clear{
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+
+.outline{
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.disabled{
+    cursor: not-allowed;
+    color: red;
+}
+
+.primary{
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+

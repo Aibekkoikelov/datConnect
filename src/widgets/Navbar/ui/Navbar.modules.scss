@@ -1,0 +1,23 @@
+.Navbar{
+    width: 100%;
+    height: var(--navbar-height);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    column-gap: 20px;
+}
+
+.mainLink{
+    margin-right: 15px;
+}
+
